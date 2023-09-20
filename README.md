@@ -1,2 +1,55 @@
-# contributions
-This is a partial list of my open source contributions
+This is a partial list of my open-source contributions:
+### &nbsp; Approved/Merged
+- Add coverage tests for pc-rtems &nbsp; &nbsp; &nbsp;  https://github.com/nasa/PSP/pull/414
+- Refactor `LC_SendHkCmd()` to reduce switch duplication &nbsp; &nbsp; &nbsp; https://github.com/nasa/LC/pull/93
+- Simplify `CS_AttemptTableReshare` &nbsp; &nbsp; &nbsp; https://github.com/nasa/CS/pull/70
+- Add error report on EVS failure during log header write &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2272
+- Update out-of-family naming/consistency issues in CF &nbsp; &nbsp; &nbsp; https://github.com/nasa/CF/pull/388
+- Refactor `LC_TableInit` to remove multiple returns &nbsp; &nbsp; &nbsp; https://github.com/nasa/LC/pull/68
+- Update status variables (0, -1) to their defined macros &nbsp; &nbsp; &nbsp; https://github.com/nasa/CF/pull/385
+- Remove component-specific cFE header #includes &nbsp; &nbsp; &nbsp; https://github.com/nasa/sample_app/pull/195
+- Align CF Command Counter implementation to cFS standard &nbsp; &nbsp; &nbsp; https://github.com/nasa/CF/pull/383
+- Remove local error return codes in `CF_ValidateConfigTable()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/CF/pull/376
+- Clean up CF return codes &nbsp; &nbsp; &nbsp; https://github.com/nasa/CF/pull/364
+- Add `MM_SegmentBreak()` to `MM_FillMem()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/MM/pull/53
+- Refactor `LC_SampleAPs` to remove extraneous `if` statement &nbsp; &nbsp; &nbsp; https://github.com/nasa/LC/pull/47
+- Make DS/FM file header sub-types unique &nbsp; &nbsp; &nbsp; https://github.com/nasa/DS/pull/62
+- Add enum to remove magic number error codes from `GetDwellData()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/MD/pull/38
+- Remove unnecessary `CF_UnionArgs_Payload_t` union &nbsp; &nbsp; &nbsp; https://github.com/nasa/CF/pull/341
+- Modify unreachable branch in `OS_ObjectIdAllocateNew` &nbsp; &nbsp; &nbsp; https://github.com/nasa/osal/pull/1327
+- Update initializations causing Cppcheck failure &nbsp; &nbsp; &nbsp; https://github.com/nasa/MM/pull/56
+- Remove initializations causing Cppcheck failure &nbsp; &nbsp; &nbsp; https://github.com/nasa/HK/pull/29
+- Remove side-effects and superfluous initializations &nbsp; &nbsp; &nbsp; https://github.com/nasa/CS/pull/85
+- Remove initializations causing Cppcheck errors &nbsp; &nbsp; &nbsp; https://github.com/nasa/FM/pull/64
+- Change format string to avoid GCC workflow failure &nbsp; &nbsp; &nbsp; https://github.com/nasa/DS/pull/64
+- Move Table Header definitions from `sc_app.h` to `sc_tbldefs.h` &nbsp; &nbsp; &nbsp; https://github.com/nasa/SC/pull/62
+- Update `TO_LAB` entry point in `cfe_es_startup.scr` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2158
+- Duplicated Logic in `CFE_SB_BroadcastBufferToRoute` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2151
+- Simplify and clarify `EVS_AddLog` logic &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2309
+- Update `CI_LAB` commands in GroundSystem Tool &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFS-GroundSystem/pull/230
+- Standardize naming of `TO_LAB` functions/macros etc. &nbsp; &nbsp; &nbsp; https://github.com/nasa/to_lab/pull/126
+- Combine consecutive, mutually-exclusive status checks &nbsp; &nbsp; &nbsp; https://github.com/nasa/DS/pull/88
+- Combine multiple unnecessary `status`/`result` variables &nbsp; &nbsp; &nbsp; https://github.com/nasa/MD/pull/55
+- Move function prototypes out of `cs_app.c` &nbsp; &nbsp; &nbsp; https://github.com/nasa/CS/pull/77
+- Combine consecutive, mutually-exclusive status checks &nbsp; &nbsp; &nbsp; https://github.com/nasa/HS/pull/78
+- Move `NO_SUCH_TABLE_ERR_EID` into `FindTableInRegistry` and make optional &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2274
+- Make padding explicit in `FM_MonitorReportEntry_t` & `FM_ChildQueueEntry_t` &nbsp; &nbsp; &nbsp; https://github.com/nasa/FM/pull/105
+- Add status return to `CFE_ES_WaitForStartupSync()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2273
+- Add test for missing branch in `SAMPLE_APP_Process()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/sample_app/pull/200
+
+### &nbsp; Submitted
+- Add functional test for `NULL` `RemoteAddr` in `OS_SocketRecvFrom` &nbsp; &nbsp; &nbsp; https://github.com/nasa/osal/pull/1389
+- Correct return value bug in VxWorks `OS_ShellOutputToFile_Impl` &nbsp; &nbsp; &nbsp; https://github.com/nasa/osal/pull/1390
+- Update command handler function message pointers and return &nbsp; &nbsp; &nbsp; https://github.com/nasa/FM/pull/96
+- Refactor common logic out of `CFE_TIME_SetTime/MET/STCFCmd()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2340
+- `SB_UT` corrections and clear event count history after setup &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2347
+- Align padding explicitly in `cfe_tbl_msg.h` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2278
+- Split up and simplify control flow in `CFE_TBL_Register()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2387
+- Add functional tests for cFE SB Message ID APIs &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2304
+- Add helper for `CFE_SB_Write...InfoCmd()` with common logic &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2285
+- Factor out common code for bitmask check &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2248
+- Refactor error handling for `EVS_GetApplicationInfo()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2212
+- Add test for missing branch in `SAMPLE_APP_Process()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/sample_app/pull/200
+- Implement common command-handler return pattern across cFE &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2302
+- Add struct for Version Info in ES HK Tlm Packet &nbsp; &nbsp; &nbsp;https://github.com/nasa/cFE/pull/2266 
+- Refactor duplicate `addrlen` swtiches into an inline function &nbsp; &nbsp; &nbsp; https://github.com/nasa/osal/pull/1388
