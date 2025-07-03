@@ -36,6 +36,16 @@ This is a partial list of my open-source contributions:
 - Make padding explicit in `FM_MonitorReportEntry_t` & `FM_ChildQueueEntry_t` &nbsp; &nbsp; &nbsp; https://github.com/nasa/FM/pull/105
 - Add status return to `CFE_ES_WaitForStartupSync()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2273
 - Add test for missing branch in `SAMPLE_APP_Process()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/sample_app/pull/200
+- Add test for missing branch in `SAMPLE_APP_Process()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/sample_app/pull/200
+- Split up and simplify control flow in `CFE_TBL_Register()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2387
+- `to_lab` light initialization logic refactor + remove multiple returns &nbsp; &nbsp; &nbsp; https://github.com/nasa/to_lab/pull/180
+- Update minor out-of-family naming/consistency issues in CF &nbsp; &nbsp; &nbsp; https://github.com/nasa/CF/pull/388
+- Simplify `CS_ComputeApp` by removing redundant `Result` variable &nbsp; &nbsp; &nbsp; https://github.com/nasa/CS/pull/104
+- Convert CS integers holding boolean truth values to bool &nbsp; &nbsp; &nbsp; https://github.com/nasa/CS/pull/83
+- Standardize command responses in the DS app &nbsp; &nbsp; &nbsp; https://github.com/nasa/DS/pull/129
+- Simplify loop in `LC_SampleAPReq` by removing `continue` &nbsp; &nbsp; &nbsp; https://github.com/nasa/LC/pull/107
+- Correct minor bugs + typos in the VxWorks layer &nbsp; &nbsp; &nbsp; https://github.com/nasa/PSP/pull/444
+- PSP coverage Test typos + bugs &nbsp; &nbsp; &nbsp; https://github.com/nasa/PSP/pull/446
 
 ### &nbsp; Submitted
 - Add functional test for `NULL` `RemoteAddr` in `OS_SocketRecvFrom` &nbsp; &nbsp; &nbsp; https://github.com/nasa/osal/pull/1389
@@ -44,12 +54,10 @@ This is a partial list of my open-source contributions:
 - Refactor common logic out of `CFE_TIME_SetTime/MET/STCFCmd()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2340
 - `SB_UT` corrections and clear event count history after setup &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2347
 - Align padding explicitly in `cfe_tbl_msg.h` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2278
-- Split up and simplify control flow in `CFE_TBL_Register()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2387
 - Add functional tests for cFE SB Message ID APIs &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2304
 - Add helper for `CFE_SB_Write...InfoCmd()` with common logic &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2285
 - Factor out common code for bitmask check &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2248
 - Refactor error handling for `EVS_GetApplicationInfo()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2212
-- Add test for missing branch in `SAMPLE_APP_Process()` &nbsp; &nbsp; &nbsp; https://github.com/nasa/sample_app/pull/200
 - Implement common command-handler return pattern across cFE &nbsp; &nbsp; &nbsp; https://github.com/nasa/cFE/pull/2302
 - Add struct for Version Info in ES HK Tlm Packet &nbsp; &nbsp; &nbsp;https://github.com/nasa/cFE/pull/2266 
 - Refactor duplicate `addrlen` swtiches into an inline function &nbsp; &nbsp; &nbsp; https://github.com/nasa/osal/pull/1388
